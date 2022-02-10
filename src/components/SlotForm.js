@@ -1,7 +1,6 @@
 import React,{useState} from 'react'
 import {Animated} from "react-animated-css";
 import axios from 'axios';
-import emailjs from 'emailjs-com';
 import Modal from 'react-bootstrap/Modal';
 import "../styles/bookSlots.css"
 export default function SlotForm() {
@@ -175,12 +174,6 @@ export default function SlotForm() {
             Language : language,
             
         }
-        // emailjs.sendForm('service_hap2d0l','template_0s89ng6', event.target, 'user_DkqtLHVQRF3C4RlfyZyKl')
-        // .then((result) => {
-        //     console.log(result.text);
-        // }, (error) => {
-        //     console.log(error.text);
-        // });
         axios.post('https://sheet.best/api/sheets/23e10b6b-a651-40ae-b6f9-b3c89e3d4b2a',data)
              .then((response)=>{
                  console.log(response)
