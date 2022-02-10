@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+*{
+    scroll-behavior: smooth;
+}
+.topics{
+    color: #BEAF33;
+    font-size: 1.6rem;
+    font-family: 'Nunito', sans-serif;
+}
+.custom-arrow-icon{
+    color: #BEAF33;
+}
+.course-list{
+    color: #fff;
+    font-size: 1.2rem;
+
+}
+.contents{
+    text-align: center;
+    
+}
+.customExpandIcon1{
+    transition:all 0.8s ease-in-out;
+    cursor: pointer; 
+}
+.customExpandIcon1:hover{
+    color: #fff;
+}
+
+@keyframes scrollTop{
+    from{
+        transform: translateY(2px);
+    }
+    to{
+        transform: translateY(-1px);
+    }
+}
+
+.customExpandIcon2{
+    transition:all 0.8s ease-in-out;
+    transform:rotateX(180deg);
+}
+@media only screen and (max-width: 426px){
+    .topics{
+        font-size: 1.1rem;
+        text-align: justify;
+    }
+    .course-list{
+        font-size: 1rem;
+        
+    }
+}

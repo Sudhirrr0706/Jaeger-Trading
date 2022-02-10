@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+*{
+    scroll-behavior: smooth;
+}
+.cardsContent{
+    background-color: #1a1814;
+    font-family: 'Nunito', sans-serif;
+}
+.aboutHead{
+    color: #fff;
+}
+.why-us{
+    font-size: 1.8rem;
+    color: #BEAF33;
+}
+@media only screen and (max-width:426px){
+    .why-us{
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+*{
+    scroll-behavior: smooth;
+}
+.amount{
+    color: #BEAF33;
+    font-size: 3rem;
+    font-family: 'Fredericka the Great', cursive;
+}
+.pricing{
+    border: 2px solid #fff;
+}
+.amount-type{
+    text-align: center;
+}
+.pricing-icon , .topic-details{
+    color: #BEAF33;
+}
+.topic-details{
+    font-size: 1.3rem;
+    font-family: 'Nunito', sans-serif;
+}
+.type{
+    color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: 6px;
+    font-family: 'Nunito', sans-serif;
+}
+.timing, .mode, .language,.book-description{
+    color: #fff;
+    font-size: 1.3rem;
+    font-family: 'Nunito', sans-serif;
+}
+.price-button{
+    text-align: center;
+}
+.book-description{
+    letter-spacing: 10px;
+}
+.custom-price-btn{
+    border-radius:5px;
+    border: 2px solid #BEAF33;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: 'Philosopher', sans-serif;
+    transition:all 0.8s ease-in-out;
+    text-align: center;
+    font-weight: 400;
+}
+.custom-price-btn:hover{
+    background-color: #BEAF33;
+    color: #fff;
+    border-color: #BEAF33;
+    transform: scale(1.1);
+}
+
+.disable{
+    opacity: 0.5;
+    background-color: rgba(255, 255, 255, 0.267);
+    border: 2px solid rgba(255, 255, 255, 0.267);
+}
+.disable:hover{
+    cursor: not-allowed;
+}
+.availableIcon{
+    text-align: center;
+    color: #BEAF33;
+}
+.offlineWords{
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: rgb(252, 112, 112);
+    font-family: 'Nunito', sans-serif;
+}
+
+
+@media only screen and (max-width: 426px){
+    .timing, .mode, .language{
+        font-size: 1rem;
+    }
+    .intro-btn{
+        font-size: 1rem;
+    }
+    .offlineWords{
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+*{
+    scroll-behavior: smooth;
+}
+.hotelLogo{
+    color: #BEAF33;
+}
+.jaeger-logo{
+    max-width: 100%;
+}
+.mobileContact{
+    color: #fff;
+    font-size: 0.8rem;
+  }
+.mobileContact i{
+    color: #BEAF33;
+  }
+.custom-nav{
+    background-color: rgb(0, 0, 0);
+      font-family: 'Nunito', sans-serif;
+    transition: all 0.4s ease-in-out;
+}
+.positionNav{
+    position: fixed;
+    width: 100%;
+    transition: all 0.2s linear;
+}
+.custom-brand-name:hover{
+    color: #beb033a8;
+}
+.customToggleButton{
+    color: #BEAF33;
+}
+.custom-brand-name{
+    color: #BEAF33;
+      font-family: 'Nunito', sans-serif;
+    transition:0.4s;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+}
+.nav-link{
+    text-decoration: none;
+    color: #fff;
+    transition:all 0.4s linear; 
+    font-size: 1.1rem;
+}
+.nav-link:hover{
+    color: #BEAF33;
+}
+.navBar-button{
+    border-radius: 5px;
+    border-color: #BEAF33;
+    color: #fff;
+    transition:all 0.4s ease-in-out;
+}
+.navBar-button:hover{
+    color: #fff;
+    border-color: #BEAF33;
+    background-color: #BEAF33;
+}
+.customToggler{
+    transform: rotateX(180deg);
+}
+
+.scroll-effect{
+    position:fixed;
+    top: 0;
+    z-index: 1;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease-in;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 15px 0 15px 0;
+    background-color: rgba(17, 17, 17, 0.918);
+}
+@media only screen and (max-width: 768px){
+    .custom-brand-name{
+        font-size:1.5rem;
+    }
+    .customNumber{
+        font-size:11px;
+    }
+    .custom-nav{
+        background-color: #111;
+        z-index:1;
+    }
+    .navBar-button{
+        float: center;
+    }
+
+}
+@media only screen and (max-width: 426px){
+    .nav-link{
+        font-size: 1rem;
+    }
+    .custom-brand-name{
+        font-size: 1.1rem;
+        letter-spacing: none;
+    }
+}

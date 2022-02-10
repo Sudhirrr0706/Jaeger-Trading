@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+*{
+    scroll-behavior: smooth;
+}
+.reviewCard{
+    border-radius: 5px;
+    background-color: rgba(250, 235, 215, 0.418);
+    transition: all 0.5s ease;
+}
+.reviewCard:hover{
+    background-color: #fff;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.personDetails{
+    text-align: center;
+}
+.star{
+    text-align: center;
+    color: #BEAF33;
+}
+.reviewCard:hover .userName{
+    color: rgb(0, 0, 0);
+}
+.reviewCard:hover .reviewContent{
+    color: rgb(0, 0, 0);
+}
+.reviewCard:hover .cityName{
+    color: rgb(0, 0, 0);
+}
+.userName,.reviewContent, .cityName{
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+}
+.cityName{
+    font-style: italic;
+}
+.reviewContent{
+    text-align: left;
+}
+.userName{
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    font-weight:600;
+}
+@media only screen and (max-width: 426px){
+    .reviewContent{
+        text-align: justify;
+    }
+}

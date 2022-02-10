@@ -1,0 +1,84 @@
+*{
+    scroll-behavior: smooth;
+}
+.booking-image{
+    max-width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+.TableBookImage{
+    max-width:100%;
+}
+
+.labelName{
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+}
+.BookButton{
+    text-align:center;
+}
+.customBookButton{
+    color: #fff;
+    background-color: #BEAF33;
+    transition: all 0.5s;
+    font-weight: 500;
+    font-family: 'Nunito', sans-serif;
+    transition: 0.5s ease-in-out;
+}
+.customBookButton:hover{
+    color: #111;
+    transform: scale(1.1);
+}
+.customBookButton:focus, .closeButton:focus , .confirmButton:focus{
+    box-shadow: none;
+}
+.form-control, .form-select{
+    background-color: transparent;
+    font-family: 'Nunito', sans-serif;
+    
+}
+
+.form-control:focus, .form-select:focus{
+    border-color: #BEAF33;
+    box-shadow:none;
+    background-color: transparent;
+}
+::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 2px;
+    opacity: 0.6;
+    filter: invert(0.8);
+}
+  input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    opacity: 1
+  }
+
+  /* Modal Design */
+
+  .moddalHeader{
+    font-family: 'Nunito', sans-serif;
+    color: #43be33;
+  }
+  .confirmIcon{
+    color: #43be33;
+  }
+  .modalBody,.confirmation{
+    font-family: 'Nunito', sans-serif;
+  }
+  .confirmation{
+      text-align: center;
+  }
+  .confirmation:focus{
+      border: none;
+      box-shadow: none;
+  }
+
+  .landingSection,  .mailSent{
+      text-align: center;
+      font-family: 'Nunito', sans-serif;
+  }
+  .mailSent{
+    font-style: italic;
+    color: rgb(155, 148, 148);
+  }

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+*{
+    scroll-behavior: smooth;
+}
+.head-section-content{
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    left: 10%;
+}
+.inner-content{
+    color: #fff;
+    text-align: center;
+}
+.inner-content h1 , .inner-content span{
+    font-family: 'Philosopher', sans-serif;
+    font-size: 4rem;
+}
+.inner-content p{
+    font-size:1.5rem;
+    font-family: 'Philosopher', sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+}
+
+.intro-btn{
+    border-radius:5px;
+    border: 2px solid #BEAF33;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: 'Philosopher', sans-serif;
+    transition:all 0.8s ease-in-out;
+    text-align: center;
+    font-weight: 400;
+}
+.intro-btn:hover{
+    background-color: #BEAF33;
+    color: #fff;
+    border-color: #BEAF33;
+    transform: scale(1.1);
+    
+}
+
+.jaeger-logo{
+    max-width: 100%;
+}
+
+/* Tablet View */
+@media only screen and (max-width: 768px){
+    .head-section-content{
+        position: absolute;
+        top:25%;
+        right: 10%;
+        left: 10%;
+    }
+    .inner-content h1 , .inner-content span{
+        font-size:2rem;
+        text-align: center;
+    }
+    .inner-content p{
+        text-align: center;
+    }
+}
+/* Mobile View */
+@media only screen and (max-width: 426px){
+    .head-section-content{
+        position: absolute;
+        top: 30%;
+        right: 10%;
+        left: 10%;
+    }
+    .inner-content h1 , .inner-content span{
+        font-size: 1.9rem;
+    }
+    .inner-content p{
+        font-size: 1rem;
+    }
+    .intro-btn{
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+*{
+    scroll-behavior: smooth;
+}
+.companyLogo{
+    max-width: 100%;
+}
+.footerLogoSection,.address{
+    text-align: center;
+}
+.companyName{
+    color: #BEAF33;
+    font-size: 2.5rem;
+    letter-spacing: 2rem;
+    font-family: 'Nunito', sans-serif;
+}
+.address{
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 1px;
+}
+.customContactIcons{
+    color: #BEAF33;
+    transition: all 0.5s ease;
+}
+.customContactIcons:hover{
+    color: #fff;
+    transform: scale(1.2);
+}
+.copyrightsSection{
+    color: #fff;
+    text-align: center;
+  }
+  .copyrightsCompanyName{
+    color: #BEAF33;
+  }
+@media only screen and (max-width: 426px){
+    .companyName{
+        font-size: 1.8rem;
+        letter-spacing: 2rem;
+        letter-spacing: 20px;
+    }
+    .address{
+        font-size: 0.8rem;
+    }
+}
