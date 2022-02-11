@@ -8,7 +8,7 @@ class Price extends Component {
           {
             id:1,
             type:"Week-Ends",
-            amount:"₹1999",
+            amount:"₹2499",
             Days:"Sat & Sun",
             // timing:"6-10 Hours",
             mode:"Online Class",
