@@ -29,7 +29,13 @@
     color: #beb033a8;
 }
 .customToggleButton{
+    transition:all 0.5s ease-in-out;
     color: #BEAF33;
+}
+.customToggleButton2{
+    transition:all 0.5s ease-in-out;
+    color: #BEAF33;
+    transform:rotateX(180deg);
 }
 .custom-brand-name{
     color: #BEAF33;

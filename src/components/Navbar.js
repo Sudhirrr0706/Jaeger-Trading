@@ -5,12 +5,12 @@ import "../styles/navbar.css"
 class Navbar extends React.Component {
 
     state={
-        togglerIcon:"navbar-toggler fas fa-chevron-down customToggleButton",
+        togglerIcon:"navbar-toggler fas fa-chevron-down customToggleButton fa-sm",
     }
 
     onClickTogglerIcon=()=>{
-        if(this.state.togglerIcon==="navbar-toggler fas fa-chevron-down customToggleButton"){
-            this.setState({togglerIcon:"navbar-toggler fas fa-chevron-up customToggleButton fa-sm"})
+        if(this.state.togglerIcon==="navbar-toggler fas fa-chevron-down customToggleButton fa-sm"){
+            this.setState({togglerIcon:"navbar-toggler fas fa-chevron-down customToggleButton2 fa-sm"})
         }
         else{
             this.setState({togglerIcon:"navbar-toggler fas fa-chevron-down customToggleButton fa-sm"})
