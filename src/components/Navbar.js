@@ -5,15 +5,15 @@ import "../styles/navbar.css"
 class Navbar extends React.Component {
 
     state={
-        togglerIcon:"navbar-toggler fas fa-chevron-down customToggleButton fa-sm",
+        togglerIcon:"navbar-toggler fas fa-chevron-down customToggleButton fa-lg",
     }
 
     onClickTogglerIcon=()=>{
-        if(this.state.togglerIcon==="navbar-toggler fas fa-chevron-down customToggleButton fa-sm"){
-            this.setState({togglerIcon:"navbar-toggler fas fa-chevron-down customToggleButton2 fa-sm"})
+        if(this.state.togglerIcon==="navbar-toggler fas fa-chevron-down customToggleButton fa-lg"){
+            this.setState({togglerIcon:"navbar-toggler fas fa-chevron-down customToggleButton2 fa-lg"})
         }
         else{
-            this.setState({togglerIcon:"navbar-toggler fas fa-chevron-down customToggleButton fa-sm"})
+            this.setState({togglerIcon:"navbar-toggler fas fa-chevron-down customToggleButton fa-lg"})
         }
     }
 
