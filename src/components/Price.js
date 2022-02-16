@@ -12,16 +12,25 @@ class Price extends Component {
             Days:"Sat & Sun",
             // timing:"6-10 Hours",
             mode:"Online Class",
-            language:"English & Tamil"
+            language:"English & Tamil",
+            visibleOption:"pricing col-lg-3 col-md-6 col-12 mx-auto py-5 m-2",
+            freeContent:"Only Limited seats, Hurry up !",
+            amountClass:"amount amtClass",
+            offers:"Free Program",
+            offerStyle:"offerStyle"
           },
           {
             id:2,
             type:"Week-Days",
             amount:"₹2499",
             Days:"Mon - Fri ",
-            // timing:"6-10 Hours",
             mode:"Online Class",
-            language:"English & Tamil"
+            language:"English & Tamil",
+            visibleOption:"disable col-lg-3 col-md-6 col-12 mx-auto py-5 m-2",
+            amountClass:"amount noStrike",
+            offers:"Currently Not available !",
+            offerStyle:"notOfferClass",
+            freeContent:""
           },
       ]
     return (
@@ -30,10 +39,13 @@ class Price extends Component {
                 {
                     price.map(item=>{
                         return(
-                            <AnimationOnScroll animateIn='animate__slideInUp' animateOnce={true} key={item.id} className='pricing col-lg-3 col-md-6 col-12 mx-auto py-5 m-2'>
+                            <AnimationOnScroll animateIn='animate__slideInUp' animateOnce={true} key={item.id} className={item.visibleOption}>
                                 <i className="fas fa-check fa-3x availableIcon d-flex justify-content-center"></i>
                                 <div className='p-3 amount-type'>
-                                    <p className='amount'>{item.amount}</p>
+                                    
+                                    <p className={item.amountClass}>{item.amount}</p>
+                                    <p className={item.offerStyle}>{item.offers}</p>
+                                    <p className='freeContentClass'>{item.freeContent}</p>
                                     <p className='type'>{item.type}</p>
                                 </div>
                                 <div className='d-flex flex-column ms-lg-3 ms-1'>
@@ -76,10 +88,12 @@ class Price extends Component {
                 }
 
                         <AnimationOnScroll animateIn='animate__slideInUp' animateOnce={true} className='disable pricing col-lg-3 col-md-6 col-12 mx-auto py-5 m-2'>
-                        <p className=' d-flex justify-content-center offlineWords'>Currently not available , due to COVID</p>
-                            {/* <i class="fa fa-close fa-4x availableIcon text-danger d-flex justify-content-center"></i> */}
+                        <i className="fa fa-close fa-3x availableIcon text-danger d-flex justify-content-center py-3"></i>
+                        {/* <p className=' d-flex justify-content-center offlineWords'>Currently not available , due to COVID</p> */}
+                            
                             <div className='p-3 amount-type'>
                                 <p className='amount'>₹4999</p>
+                                <p className=' d-flex justify-content-center offlineWords'>Currently not available , due to COVID</p>
                                 <p className='type'>OFFLINE</p>
                             </div>
                             <div className='d-flex flex-column ms-lg-3 ms-1 features'>
