@@ -38,13 +38,7 @@
 .noStrike{
     text-decoration: none;
 }
-.notOfferClass{
-    font-size: 1.6rem;
-    letter-spacing: 5px;
-    /* font-weight: 700; */
-    font-family: 'Nunito', sans-serif;
-    color:rgb(252, 112, 112);
-}
+
 .offerStyle{
     color: #BEAF33;
     /* font-weight: 900; */
@@ -82,7 +76,6 @@
 
 .disable{
     opacity: 0.5;
-    font-size: 1.5rem;
     background-color: rgba(255, 255, 255, 0.267);
     border: 2px solid rgba(255, 255, 255, 0.267);
 }
@@ -93,11 +86,18 @@
     text-align: center;
     color: #BEAF33;
 }
-.offlineWords{
-    font-size: 1.3rem;
+.offlineWords, .notOfferClass{
     font-weight: 900;
     color: rgb(252, 112, 112);
     font-family: 'Nunito', sans-serif;
+}
+.notOfferClass{
+    font-size: 1.4rem;
+    letter-spacing: 5px;
+}
+.offlineWords{
+    font-size: 1rem;
+    letter-spacing: 2px;
 }
 
 

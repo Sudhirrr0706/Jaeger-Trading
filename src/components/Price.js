@@ -13,11 +13,12 @@ class Price extends Component {
             // timing:"6-10 Hours",
             mode:"Online Class",
             language:"English & Tamil",
-            visibleOption:"pricing col-lg-3 col-md-6 col-12 mx-auto py-5 m-2",
+            visibleOption:"pricing col-lg-3 col-md-6 col-12 mx-auto py-4 m-2",
             freeContent:"Only Limited seats, Hurry up !",
             amountClass:"amount amtClass",
             offers:"Free Program",
-            offerStyle:"offerStyle"
+            offerStyle:"offerStyle",
+            headerIcon:"fas fa-check fa-3x availableIcon d-flex justify-content-center"
           },
           {
             id:2,
@@ -30,7 +31,8 @@ class Price extends Component {
             amountClass:"amount noStrike",
             offers:"Currently Not available !",
             offerStyle:"notOfferClass",
-            freeContent:""
+            freeContent:"",
+            headerIcon:"fa fa-close fa-3x availableIcon d-flex justify-content-center text-danger"
           },
       ]
     return (
@@ -40,7 +42,7 @@ class Price extends Component {
                     price.map(item=>{
                         return(
                             <AnimationOnScroll animateIn='animate__slideInUp' animateOnce={true} key={item.id} className={item.visibleOption}>
-                                <i className="fas fa-check fa-3x availableIcon d-flex justify-content-center"></i>
+                                <i className={item.headerIcon}></i>
                                 <div className='p-3 amount-type'>
                                     
                                     <p className={item.amountClass}>{item.amount}</p>
@@ -88,7 +90,7 @@ class Price extends Component {
                 }
 
                         <AnimationOnScroll animateIn='animate__slideInUp' animateOnce={true} className='disable pricing col-lg-3 col-md-6 col-12 mx-auto py-5 m-2'>
-                        <i className="fa fa-close fa-3x availableIcon text-danger d-flex justify-content-center py-3"></i>
+                        <i className="fa fa-close fa-3x availableIcon text-danger d-flex justify-content-center py-2"></i>
                         {/* <p className=' d-flex justify-content-center offlineWords'>Currently not available , due to COVID</p> */}
                             
                             <div className='p-3 amount-type'>
