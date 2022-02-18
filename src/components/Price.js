@@ -10,13 +10,12 @@ class Price extends Component {
             type:"Week-Ends",
             amount:"₹2499",
             Days:"Sat & Sun",
-            // timing:"6-10 Hours",
             mode:"Online Class",
             language:"English & Tamil",
-            visibleOption:"pricing col-lg-3 col-md-6 col-12 mx-auto py-4 m-2",
-            freeContent:"Only Limited seats, Hurry up !",
-            amountClass:"amount amtClass",
-            offers:"Free Program",
+            visibleOption:"pricing col-lg-3 col-md-6 col-12 mx-auto py-5 m-2",
+            // freeContent:"Only Limited seats, Hurry up !",
+            amountClass:"amount",
+            // offers:"Free Program",
             offerStyle:"offerStyle",
             headerIcon:"fas fa-check fa-3x availableIcon d-flex justify-content-center"
           },
@@ -27,12 +26,12 @@ class Price extends Component {
             Days:"Mon - Fri ",
             mode:"Online Class",
             language:"English & Tamil",
-            visibleOption:"disable col-lg-3 col-md-6 col-12 mx-auto py-5 m-2",
-            amountClass:"amount noStrike",
-            offers:"Currently Not available !",
+            visibleOption:"pricing col-lg-3 col-md-6 col-12 mx-auto py-5 m-2",
+            amountClass:"amount",
+            // offers:"Currently Not available !",
             offerStyle:"notOfferClass",
             freeContent:"",
-            headerIcon:"fa fa-close fa-3x availableIcon d-flex justify-content-center text-danger"
+            headerIcon:"fas fa-check fa-3x availableIcon d-flex justify-content-center"
           },
       ]
     return (
@@ -89,13 +88,13 @@ class Price extends Component {
                     })
                 }
 
-                        <AnimationOnScroll animateIn='animate__slideInUp' animateOnce={true} className='disable pricing col-lg-3 col-md-6 col-12 mx-auto py-5 m-2'>
+                        <AnimationOnScroll animateIn='animate__slideInUp' animateOnce={true} className='disable pricing col-lg-3 col-md-6 col-12 mx-auto py-4 m-2'>
                         <i className="fa fa-close fa-3x availableIcon text-danger d-flex justify-content-center py-2"></i>
-                        {/* <p className=' d-flex justify-content-center offlineWords'>Currently not available , due to COVID</p> */}
+                        <p className=' d-flex justify-content-center offlineWords'>Currently not available , due to COVID</p>
                             
                             <div className='p-3 amount-type'>
                                 <p className='amount'>₹4999</p>
-                                <p className=' d-flex justify-content-center offlineWords'>Currently not available , due to COVID</p>
+                                {/* <p className=' d-flex justify-content-center offlineWords'>Currently not available , due to COVID</p> */}
                                 <p className='type'>OFFLINE</p>
                             </div>
                             <div className='d-flex flex-column ms-lg-3 ms-1 features'>
@@ -106,15 +105,6 @@ class Price extends Component {
                                     </div>
                                     <p className='my-auto ps-2 timing'>Mon - Fri / Sat & Sun</p>
                                 </div>
-
-
-                                    {/* <div className='d-flex p-3'>
-                                        <div className='d-flex'>
-                                            <i className="fas fa-clock my-auto fa-lg pricing-icon"></i>
-                                            <p className=' topic-details ps-2 my-auto'>Duration : </p>
-                                        </div>
-                                        <p className='my-auto ps-2 timing'>{item.timing}</p>
-                                    </div> */}
 
                                 <div className='d-flex p-3'>
                                     <div className='d-flex'>
