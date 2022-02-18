@@ -238,7 +238,7 @@ export default function SlotForm() {
                             <select defaultValue={'DEFAULT'} id="inputState" className="form-select text-white" onChange={(e)=>setBatch(e.target.value)} value={batch}>
                                 <option className="text-dark">Choose...</option>
                                 <option className="text-dark">Week-End</option>
-                                <option className="text-dark" disabled>Week-Days</option>
+                                <option className="text-dark">Week-Days</option>
                                 <option className="text-dark" disabled>Offline</option>
                                
                             </select>
