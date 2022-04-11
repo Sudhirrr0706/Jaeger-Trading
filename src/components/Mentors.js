@@ -18,7 +18,7 @@ class Mentors extends Component {
                     <MentorCard name="Thyagarajan" deg="MBA (Investment Management)"  whatsapp="https://wa.link/f7c9xp" Email="mailto:jaegertradingschool@gmail.com" instagram="https://instagram.com/jaeger_trading?utm_medium=copy_link"/>
                 </AnimationOnScroll>
                 <AnimationOnScroll animateIn='animate__slideInUp' duration={1.9} className='col-lg-4 col-12 mentorDetails'>
-                    <MentorCard name="Vishva R" deg="BE Mechanical , MBA (Finance)"  whatsapp="https://wa.link/nfud98" Email="mailto:jaegertradingschool@gmail.com" instagram="https://instagram.com/jaeger_trading?utm_medium=copy_link" />
+                    <MentorCard name="Vishwa R" deg="BE Mechanical , MBA (Finance)"  whatsapp="https://wa.link/nfud98" Email="mailto:jaegertradingschool@gmail.com" instagram="https://instagram.com/jaeger_trading?utm_medium=copy_link" />
                 </AnimationOnScroll>
                 <AnimationOnScroll animateIn='animate__slideInUp' duration={1.9} className='col-lg-4 col-12 mentorDetails'>
                     <MentorCard name="Tharun Kumar" deg="MBA (Operations)"  whatsapp="https://wa.link/cy72u8" Email="mailto:jaegertradingschool@gmail.com" instagram="https://instagram.com/jaeger_trading?utm_medium=copy_link" />
