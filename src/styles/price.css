@@ -114,4 +114,7 @@
     .notOfferClass{
         font-size: 1.3rem;
     }
+    .pricing{
+        text-align: center;
+    }
 }
