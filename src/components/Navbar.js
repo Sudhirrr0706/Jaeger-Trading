@@ -24,8 +24,8 @@ class Navbar extends React.Component {
                 <div className="d-flex container">
                     <div className="d-flex mx-auto justify-content-center align-items-center">
                         <div className="d-flex">
-                            <img className='jaeger-logo col-lg-1 col-2' src="../jaeger-logo.png" alt="Logo" />
-                            <a className="navbar-brand custom-brand-name d-flex align-items-center" href="#introduction">Jaeger</a>
+                            <img className='jaeger-logo col-lg-1 col-2 p-1' src="../jaeger-logo.png" alt="Logo" />
+                            <a className="navbar-brand custom-brand-name d-flex align-items-center pb-0" href="#introduction">Jaeger</a>
                         </div>
                         <i onClick={this.onClickTogglerIcon} className={this.state.togglerIcon} data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"/>
                     </div>
@@ -61,10 +61,12 @@ class Navbar extends React.Component {
                             <li className="nav-item">
                                 <a className="nav-link" href="#contactSection">Contact</a>
                             </li>
+                            <li className="nav-item">
+                                <a  className="nav-link" href="#bookingSection">Slots</a>
+                            </li>
 
                         </ul>
-                        
-                        <a className="btn btn-outline-secondary px-3 navBar-button" href="#bookingSection">Book A Slot</a>
+                        {/* <a className="btn btn-outline-secondary navBar-button" href="#bookingSection">Book Slot</a> */}
                     </div>
                 </div>
             </nav>

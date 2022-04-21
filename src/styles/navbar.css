@@ -39,7 +39,7 @@
 }
 .custom-brand-name{
     color: #BEAF33;
-      font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito', sans-serif;
     transition:0.4s;
     font-size: 1.7rem;
     letter-spacing: 2px;
@@ -82,7 +82,7 @@
 }
 @media only screen and (max-width: 768px){
     .custom-brand-name{
-        font-size:1.5rem;
+        font-size:1.6rem;
     }
     .customNumber{
         font-size:11px;
@@ -92,7 +92,7 @@
         z-index:1;
     }
     .navBar-button{
-        float: center;
+        /* float: center; */
     }
 
 }
@@ -101,7 +101,7 @@
         font-size: 1rem;
     }
     .custom-brand-name{
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         letter-spacing: none;
     }
 }
