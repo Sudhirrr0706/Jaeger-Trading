@@ -8,7 +8,7 @@ class Price extends Component {
           {
             id:1,
             type:"Week-Ends",
-            amount:"₹2499",
+            amount:"₹7499",
             Days:"Sat & Sun",
             mode:"Online Class",
             language:"English & Tamil",
@@ -22,7 +22,7 @@ class Price extends Component {
           {
             id:2,
             type:"Week-Days",
-            amount:"₹2499",
+            amount:"₹7499",
             Days:"Mon - Fri ",
             mode:"Online Class",
             language:"English & Tamil",
@@ -93,7 +93,7 @@ class Price extends Component {
                         <p className=' d-flex justify-content-center offlineWords'>Currently not available , due to COVID</p>
                             
                             <div className='p-3 amount-type'>
-                                <p className='amount'>₹4999</p>
+                                <p className='amount'>₹7499</p>
                                 {/* <p className=' d-flex justify-content-center offlineWords'>Currently not available , due to COVID</p> */}
                                 <p className='type'>OFFLINE</p>
                             </div>
